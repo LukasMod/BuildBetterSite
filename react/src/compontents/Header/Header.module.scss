@@ -1,0 +1,19 @@
+.header {
+    background-color: lightgreen;
+    position: fixed;
+
+    &__logo-wrapper{
+        left: 10px;
+        z-index: 1;
+        width: 240px;
+        position: absolute;
+    }
+    &__img-wrapper{
+        height: 240px;
+        overflow: hidden;
+    }
+    &__image{
+        max-height: 280px;
+        width: auto;
+    }
+}
