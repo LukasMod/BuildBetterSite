@@ -1,19 +1,18 @@
 .header {
-    background-color: lightgreen;
-    position: fixed;
-
+    top: 0;
+    width: 100%;
+    position: relative;
     &__logo-wrapper{
         left: 10px;
         z-index: 1;
-        width: 240px;
         position: absolute;
     }
     &__img-wrapper{
         height: 240px;
-        overflow: hidden;
+        min-width: 240px;
+        overflow: hidden; 
     }
     &__image{
         max-height: 280px;
-        width: auto;
     }
 }
