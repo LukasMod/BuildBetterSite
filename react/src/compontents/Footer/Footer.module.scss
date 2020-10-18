@@ -1,42 +1,43 @@
-@import '../../Colors.scss';
+@import "../../Colors.scss";
 
-.footer{
-    width: 100%;
-    padding: 30px;
-    background-color: $color-background-2;
+.footer {
+  width: 100%;
+  padding: 30px;
+  background-color: $color-background-2;
+  color: $color-font-2;
+  &a:link,
+  a:visited {
     color: $color-font-2;
-    &a:link, a:visited{
-        color: $color-font-2;
+  }
+  &__contact-wrapper {
+    display: flex;
+  }
+  &__media-wrapper {
+    flex-grow: 0.3;
+    text-align: center;
+  }
+  &__media {
+    transition: 0.3s;
+    font-size: 3em;
+    margin-left: 25px;
+    &--small {
+      font-size: 20px;
+      margin-right: 10px;
     }
-    &__contact-wrapper{
-        display: flex;
+    &:hover {
+      color: $color-font-3;
+      cursor: pointer;
     }
-    &__media-wrapper{
-        flex-grow: 0.3;
-        text-align: center;
-    }
-    &__media{
-        transition: 0.3s;
-        font-size: 3em;
-        margin-left: 25px;
-        &--small{
-            font-size: 20px;
-            margin-right: 10px;
-        }
-        &:hover{
-            color: $color-font-3;
-            cursor: pointer;
-        }
-    }
-    &__address-wrapper{
-        display: flex;
-        flex-direction: column;
-        font-size: 100%;
-        padding-left: 10px;
-        margin-top: 3px;
-    }
-    &__rights{
-        margin-top: 15px;
-        text-align: center;
-    }
+  }
+  &__address-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 100%;
+    padding-left: 10px;
+    margin-top: 3px;
+  }
+  &__rights {
+    margin-top: 15px;
+    text-align: center;
+  }
 }

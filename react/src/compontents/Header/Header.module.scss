@@ -1,18 +1,18 @@
 .header {
-    top: 0;
-    width: 100%;
-    position: relative;
-    &__logo-wrapper{
-        left: 10px;
-        z-index: 1;
-        position: absolute;
-    }
-    &__img-wrapper{
-        height: 240px;
-        min-width: 240px;
-        overflow: hidden; 
-    }
-    &__image{
-        max-height: 280px;
-    }
+  top: 0;
+  width: 100%;
+  position: relative;
+  &__logo-wrapper {
+    left: 10px;
+    z-index: 1;
+    position: absolute;
+  }
+  &__img-wrapper {
+    height: 240px;
+    min-width: 240px;
+    overflow: hidden;
+  }
+  &__image {
+    max-height: 280px;
+  }
 }
