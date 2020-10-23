@@ -1,25 +1,25 @@
 module.exports = {
   devServer: {
-    contentBase: "./public",
+    contentBase: './public',
     port: 3001,
   },
-  devtool: "inline-source-map",
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
         test: /\.module\.s(a|c)ss$/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: {
-                localIdentName: "[local]",
+                localIdentName: '[local]',
               },
             },
           },
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: {
               sourceMap: true,
             },
@@ -30,10 +30,10 @@ module.exports = {
         test: /\.(s(a|c)ss|css)$/,
         exclude: /\.module.(s(a|c)ss)$/,
         loader: [
-          "style-loader",
-          "css-loader",
+          'style-loader',
+          'css-loader',
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: {
               sourceMap: true,
             },

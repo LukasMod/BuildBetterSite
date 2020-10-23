@@ -1,6 +1,6 @@
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   optimization: {
@@ -13,15 +13,15 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: {
-                localIdentName: "[local]",
+                localIdentName: '[local]',
               },
             },
           },
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: {
               sourceMap: true,
             },
@@ -33,9 +33,9 @@ module.exports = {
         exclude: /\.module.(s(a|c)ss)$/,
         loader: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          'css-loader',
           {
-            loader: "sass-loader",
+            loader: 'sass-loader',
             options: {
               sourceMap: true,
             },
@@ -47,9 +47,9 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "style.[contenthash:6.css",
-      chunkFilename: "style.[contenthash:6].css",
-      publicPath: "./",
+      filename: 'style.[contenthash:6.css',
+      chunkFilename: 'style.[contenthash:6].css',
+      publicPath: './',
     }),
   ],
 };
