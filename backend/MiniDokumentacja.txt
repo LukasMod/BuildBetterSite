@@ -10,7 +10,7 @@ U�ytkownicy:
 
 -----------------------------------------------
 
-Base url: http://localhost:8001
+Base url: http://localhost:8000
 
 Endpoint: '/users'
 
@@ -42,13 +42,13 @@ Endpoint: '/users'
 
 Endpoint: '/services'
 
-1. Metoda GET (pobranie wszystkich kurs�w)
+1. Metoda GET (pobranie wszystkich usług)
 
   responses:
     - status: 200, data: services(object[])
     - status: 500, message: 'Oops! Co� posz�o nie tak, przy metodzie GET w endpointcie /services'
 
-2. Metoda PUT (przes�anie zaktualizowanego kursu)
+2. Metoda PUT (przesłanie zaktualizowanej usługi)
   body: {
     description: string,
     id: string,
@@ -64,7 +64,7 @@ Endpoint: '/services'
     - status: 202, data: services(object[])
     - status: 500, message: 'Oops! Co� posz�o nie tak, przy metodzie PUT w endpointcie /services'
 
-3. Metoda POST (tworzenie nowego kursu)
+3. Metoda POST (tworzenie nowej usługi)
   body: {
     description: string,
     img: string,

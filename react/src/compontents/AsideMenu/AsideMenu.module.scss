@@ -15,16 +15,28 @@
     margin-top: 5px;
     font-size: 120%;
   }
-  &__link {
+  li {
+    list-style: none;
+  }
+
+  &__nav-link {
     padding-left: 15px;
     font-size: 110%;
     list-style: none;
     transition: 0.3s;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+
     &:hover {
       padding-left: 25px;
       cursor: pointer;
       background-color: $color-background-2;
       color: $color-font-2;
     }
+  }
+  &__active {
+    border-bottom: 2px solid $color-font-3;
   }
 }

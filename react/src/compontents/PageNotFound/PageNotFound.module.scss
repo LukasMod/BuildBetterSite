@@ -1,0 +1,39 @@
+@import '../../Colors.scss';
+
+.page-not-found {
+  text-align: center;
+  &__title {
+    border-bottom: 2px solid $color-font-3;
+    position: absolute;
+    top: calc(30%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__text {
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__link {
+    font-size: 105%;
+    color: $color-font-1;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      border-bottom: 2px solid $color-font-3;
+    }
+  }
+  &__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    max-width: 100%;
+    img {
+      opacity: 0.1;
+    }
+  }
+}

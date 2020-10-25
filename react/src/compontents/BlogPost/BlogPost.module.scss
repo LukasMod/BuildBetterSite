@@ -1,0 +1,16 @@
+@import '../../Colors.scss';
+
+.blog-post {
+  &__title {
+    border-bottom: 2px solid $color-font-3;
+  }
+  &__text {
+    text-align: justify;
+  }
+  &__image-wrapper {
+    text-align: center;
+    max-height: 200px;
+    width: 100%;
+    overflow: hidden;
+  }
+}

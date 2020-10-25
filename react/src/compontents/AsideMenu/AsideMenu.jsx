@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import bemCssModules from 'bem-css-modules';
 
 import { default as AsideMenuStyles } from './AsideMenu.module.scss';
@@ -11,10 +12,31 @@ const AsideMenu = () => {
       <div className={style('nav-wrapper')}>
         <nav>
           <ul>
-            <p className={style('title')}>Nawigacja:</p>
-            <li className={style('link')}>Shop</li>
-            <li className={style('link')}>User Panel</li>
-            <li className={style('link')}>Blog</li>
+            <p className={style('title')}>MENU:</p>
+            <li>
+              <NavLink
+                to='/shop'
+                className={style('nav-link')}
+                activeClassName={style('active')}>
+                Shop
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to='/user-panel'
+                className={style('nav-link')}
+                activeClassName={style('active')}>
+                User Panel
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to='/blog'
+                className={style('nav-link')}
+                activeClassName={style('active')}>
+                Blog
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
