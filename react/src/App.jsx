@@ -8,12 +8,13 @@ import AsideMenu from './compontents/AsideMenu/AsideMenu';
 import Content from './compontents/Content/Content';
 import Footer from './compontents/Footer/Footer';
 import Header from './compontents/Header/Header';
+import StoreProvider from './store/StoreProvider';
 
 const newHistory = createBrowserHistory();
 
 const App = () => {
   return (
-    <>
+    <StoreProvider>
       <Router history={newHistory}>
         <Header />
         <div className='content-wrapper'>
@@ -22,7 +23,7 @@ const App = () => {
         </div>
       </Router>
       <Footer />
-    </>
+    </StoreProvider>
   );
 };
 
