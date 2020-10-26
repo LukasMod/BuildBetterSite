@@ -1,0 +1,16 @@
+@import '../../Colors.scss';
+.services {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  &__title {
+    border-bottom: 2px solid $color-font-3;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

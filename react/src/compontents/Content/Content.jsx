@@ -7,7 +7,7 @@ import { default as ContentStyles } from './Content.module.scss';
 import BlogPost from '../BlogPost/BlogPost';
 import Main from '../Main/Main';
 import PageNotFound from '../PageNotFound/PageNotFound';
-import Shop from '../Shop/Shop';
+import Services from '../Services/Services';
 
 const style = bemCssModules(ContentStyles);
 
@@ -16,8 +16,8 @@ const Content = () => {
     <main className={style()}>
       <Switch>
         <Route exact path='/' render={() => <Main />} />
-        <Route path='/shop' render={() => <Shop />} />
-        <Route path='/user-panel' render={() => <Shop />} />
+        <Route path='/services' render={() => <Services />} />
+        <Route path='/user-panel' render={() => <Services />} />
         <Route path='/blog' render={() => <BlogPost />} />
         <Route path='/PageNotFound' render={() => <PageNotFound />} />
         <Redirect to='PageNotFound' />

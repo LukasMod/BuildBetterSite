@@ -15,10 +15,10 @@ const AsideMenu = () => {
             <p className={style('title')}>MENU:</p>
             <li>
               <NavLink
-                to='/shop'
+                to='/services'
                 className={style('nav-link')}
                 activeClassName={style('active')}>
-                Shop
+                Services
               </NavLink>
             </li>
             <li>
