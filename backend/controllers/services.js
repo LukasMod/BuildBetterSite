@@ -5,7 +5,8 @@ const servicesData = [
     description:
       'Wall on a 75mm profile, double-sided normal plasterboard 2 x 12.5 mm',
     id: uuid(),
-    img: '../img/plasterboardN300x240.png',
+    img:
+      'https://lh4.googleusercontent.com/IuVocxR8RuBwbXHNokTPvMZtZ_uSm9Q9-qVWR6SL_VAaxTfMCMQLd8O8Et3t63ATtN6MzmHBksQS3RFFtR-D=w1920-h937',
     price: 200,
     producers: ['Siniat, Norgips, Saint-Gobain'],
     title: 'Plasterboard system wall 125mm - normal',
@@ -14,7 +15,8 @@ const servicesData = [
     description:
       'Wall on a 75mm profile, double-sided water resistant plasterboard 2 x 12.5 mm',
     id: uuid(),
-    img: '../img/plasterboardW300x240.png',
+    img:
+      'https://lh3.google.com/u/0/d/1PUSfSu0aQLYoxxg-WUizJ3gy8lOtlq-P=w1920-h937-iv1',
     price: 230,
     producers: ['Siniat, Norgips, Saint-Gobain'],
     title: 'Plasterboard system wall 125mm - water resistant',
@@ -23,7 +25,8 @@ const servicesData = [
     description:
       'Wall on a 75mm profile, double-sided silent plasterboard 2 x 12.5 mm',
     id: uuid(),
-    img: '../img/plasterboardS300x240.png',
+    img:
+      'https://lh3.google.com/u/0/d/1kL5y9rE5aBYQ03krUXx9gfOtquR8t1QB=w2000-h1052-iv1',
     price: 240,
     producers: ['Siniat, Norgips, Saint-Gobain'],
     title: 'Plasterboard system wall 125mm - silent',
@@ -32,7 +35,8 @@ const servicesData = [
     description:
       'Wall on a 75mm profile, double-sided fire resistant plasterboard 2 x 12.5 mm',
     id: uuid(),
-    img: '../img/plasterboardF300x240.png',
+    img:
+      'https://lh3.google.com/u/0/d/15g2N_HuCO9VDn_V05czYqAOw5UgnBz31=w1920-h937-iv1',
     price: 250,
     producers: ['Siniat, Norgips, Saint-Gobain'],
     title: 'Plasterboard system wall 125mm - fire resistant',

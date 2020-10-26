@@ -13,4 +13,4 @@ server.use(cors());
 server.use('/services', servicesRoutes);
 server.use('/users', usersRoutes);
 
-server.listen(8001, () => console.log('Server for services is started...'));
+server.listen(8000, () => console.log('Server for services is started...'));
