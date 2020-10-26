@@ -10,7 +10,7 @@ U�ytkownicy:
 
 -----------------------------------------------
 
-Base url: http://localhost:8000
+Base url: http://localhost:8001
 
 Endpoint: '/users'
 
