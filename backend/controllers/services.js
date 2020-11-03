@@ -6,7 +6,7 @@ const servicesData = [
       'Wall on a 75mm profile, double-sided normal plasterboard 2 x 12.5 mm',
     id: uuid(),
     img:
-      'https://lh4.googleusercontent.com/IuVocxR8RuBwbXHNokTPvMZtZ_uSm9Q9-qVWR6SL_VAaxTfMCMQLd8O8Et3t63ATtN6MzmHBksQS3RFFtR-D=w1920-h937',
+      'https://lh3.google.com/u/0/d/1dOWYXgFXvxKfp5PcnGKnZqFw_UMQfcd8=w1920-h937-iv1',
     price: 200,
     producers: ['Siniat, Norgips, Saint-Gobain'],
     title: 'Plasterboard system wall 125mm - normal',
