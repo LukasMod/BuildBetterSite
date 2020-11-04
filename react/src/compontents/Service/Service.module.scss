@@ -1,10 +1,9 @@
 @import '../../Colors.scss';
 .service-card {
-  max-width: 300px;
-  min-height: 550px;
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  max-width: 220px;
+  margin: 0 1em 1em 0;
   border: 2px solid $color-font-1;
 
   &:hover > &__image {
@@ -12,26 +11,34 @@
   }
 
   &__description {
-    text-align: justify;
     margin: 0;
-    padding: 10px 15px 10px 15px;
+    padding: 0.5em;
+    font-size: 0.9rem;
+    text-align: left;
   }
   &__image {
+    display: block;
+    max-width: 216px;
+    height: auto;
     opacity: 0.75;
     transition: 0.3s;
   }
   &__price {
     margin: 0;
-    padding: 5px 15px 0 15px;
-    font-size: 130%;
+    padding: 0.5em;
+    font-size: 0.9rem;
   }
   &__producers {
     margin: 0;
-    padding: 0 15px 0 15px;
+    padding: 0.5em;
+    font-size: 0.75rem;
   }
   &__title {
+    width: 90%;
+    margin: 0.5em auto;
+    padding: 0 0.5em 0 0.5em;
+    font-size: 1rem;
     text-align: center;
     border-bottom: 2px solid $color-font-3;
-    padding: 0 15px 0 15px;
   }
 }

@@ -8,8 +8,8 @@ const style = bemModulesCss(ServiceStyles);
 
 const Service = ({ description, id, img, price, producers, title }) => {
   return (
-    <li>
-      <article className={style()}>
+    <li className={style()}>
+      <article>
         <h3 className={style('title')}>{title}</h3>
         <img src={img} alt={title} className={style('image')} />
         <p className={style('price')}>

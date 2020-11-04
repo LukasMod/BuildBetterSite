@@ -1,18 +1,33 @@
+@import '../../Breakpoints.scss';
+
 .header {
+  position: relative;
   top: 0;
   width: 100%;
-  position: relative;
+  margin-bottom: 0.5em;
   &__logo-wrapper {
-    left: 10px;
-    z-index: 1;
     position: absolute;
+    height: 2.5em;
+    left: 0.8em;
+    top: 0.8em;
+    z-index: 1;
+    @include for-tablet-portrait-up {
+      height: 5em;
+      left: 2em;
+      top: 2em;
+    }
   }
   &__img-wrapper {
-    height: 240px;
-    min-width: 240px;
+    height: 110px;
     overflow: hidden;
+    @include for-tablet-portrait-up {
+      height: 220px;
+    }
   }
   &__image {
-    max-height: 280px;
+    width: 850px;
+    @include for-tablet-portrait-up {
+      width: 1800px;
+    }
   }
 }

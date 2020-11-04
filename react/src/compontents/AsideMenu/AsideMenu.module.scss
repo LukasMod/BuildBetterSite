@@ -1,39 +1,43 @@
 @import '../../Colors.scss';
+@import '../../Breakpoints.scss';
 
 .aside-menu {
   position: relative;
-  width: 200px;
-  padding: 15px;
+  width: 0;
+  padding: 0;
+  transform: translateX(-150px);
+
+  @include for-tablet-portrait-up {
+    min-width: 150px;
+    transform: translateX(0);
+    padding: 0.5em;
+  }
 
   &__nav-wrapper {
     position: sticky;
-    top: 50px;
-    padding: 0 0px;
+    top: 3em;
     text-align: left;
   }
-  &__title {
-    margin-top: 5px;
-    font-size: 120%;
-  }
-  li {
+
+  ul {
     list-style: none;
+    padding: 0;
   }
 
   &__nav-link {
-    padding-left: 15px;
-    font-size: 110%;
-    list-style: none;
-    transition: 0.3s;
     display: block;
+    padding-left: 0.5em;
+    margin-bottom: 0.2em;
     text-decoration: none;
     color: inherit;
-    list-style: none;
+    transition: 0.3s;
+    font-size: 0.9rem;
 
     &:hover {
-      padding-left: 25px;
-      cursor: pointer;
+      padding-left: 1em;
       background-color: $color-background-2;
       color: $color-font-2;
+      cursor: pointer;
     }
   }
   &__active {

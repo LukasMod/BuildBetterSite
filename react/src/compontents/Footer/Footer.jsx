@@ -12,19 +12,19 @@ const Footer = () => {
     <footer className={style()}>
       <section className={style('contact-wrapper')}>
         <div className={style('media-wrapper')}>
-          <a href={linkToGitHub}>
+          <a className={style('media-wrapper-link')} href={linkToGitHub}>
             <FontAwesomeIcon
               icon={['fab', 'facebook-square']}
               className={style('media')}
             />
           </a>
-          <a href={linkToGitHub}>
+          <a className={style('media-wrapper-link')} href={linkToGitHub}>
             <FontAwesomeIcon
               icon={['fab', 'github-square']}
               className={style('media')}
             />
           </a>
-          <a href={linkToGitHub}>
+          <a className={style('media-wrapper-link')} href={linkToGitHub}>
             <FontAwesomeIcon
               icon={'envelope-square'}
               className={style('media')}

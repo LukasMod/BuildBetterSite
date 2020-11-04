@@ -12,7 +12,6 @@ const AsideMenu = () => {
       <div className={style('nav-wrapper')}>
         <nav>
           <ul>
-            <p className={style('title')}>MENU:</p>
             <li>
               <NavLink
                 to='/services'

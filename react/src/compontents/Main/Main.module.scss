@@ -7,11 +7,12 @@
     text-transform: uppercase;
   }
   &__text {
-    font-size: 115%;
+    font-size: 1rem;
   }
   &__image-wrapper {
     text-align: center;
     overflow: hidden;
+    margin-bottom: 2em;
     img {
       max-width: 100%;
       height: auto;

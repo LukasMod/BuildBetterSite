@@ -11,12 +11,15 @@ const PageNotFound = () => {
     <article className={style()}>
       <div className={style('image-wrapper')}>
         <img src='img/blueprint.jpg' alt='blueprint' />
-        <h2 className={style('title')}>Upssss! We have a problem...</h2>
+        <h2 className={style('title')}>Ups! We have a problem...</h2>
         <p className={style('text')}>
-          The architect forgot to draw something into the design. Try &nbsp;
-          <Link to='/' className={style('link')}>
-            here
-          </Link>
+          The architect forgot to draw something into the design.{' '}
+          <span>
+            Try &nbsp;
+            <Link to='/' className={style('link')}>
+              here
+            </Link>
+          </span>
         </p>
       </div>
     </article>
