@@ -3,11 +3,13 @@
 
 .aside-menu {
   position: relative;
+
   width: 0;
   padding: 0;
   transform: translateX(-150px);
 
   @include for-tablet-portrait-up {
+    flex-basis: 150px;
     min-width: 150px;
     transform: translateX(0);
     padding: 0.5em;

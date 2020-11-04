@@ -7,9 +7,13 @@ const style = bemCssModules(BlogPostStyles);
 
 const BlogPost = () => {
   return (
-    <article>
+    <article className={style()}>
       <div className={style('image-wrapper')}>
-        <img src='img/tools640x426.jpg' alt='tools' />
+        <img
+          src='img/tools640x426.jpg'
+          alt='tools'
+          className={style('image')}
+        />
       </div>
       <h2 className={style('title')}>Article</h2>
       <p className={style('text')}>

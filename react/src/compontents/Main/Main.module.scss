@@ -1,6 +1,7 @@
 @import '../../Colors.scss';
 
 .main {
+  margin: auto;
   text-align: center;
   &__title {
     border-bottom: 2px solid $color-font-3;

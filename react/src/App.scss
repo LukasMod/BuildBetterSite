@@ -15,8 +15,9 @@ body {
   color: $color-font-1;
 }
 .content-wrapper {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: calc(100vh - 110px - 150px);
   @include for-tablet-portrait-up {
     min-height: calc(100vh - 220px - 120px);

@@ -1,6 +1,8 @@
 @import '../../Colors.scss';
 
 .blog-post {
+  width: 90%;
+  margin: 0 auto;
   &__title {
     border-bottom: 2px solid $color-font-3;
   }
@@ -10,8 +12,14 @@
   }
   &__image-wrapper {
     max-height: 200px;
-    width: 100%;
+
     overflow: hidden;
     text-align: center;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__image {
+    max-width: 100%;
+    height: auto;
   }
 }
